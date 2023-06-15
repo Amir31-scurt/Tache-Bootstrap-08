@@ -122,3 +122,49 @@ h4,h5{
 .portfolio-link:hover .portfolio-hover{
     opacity: 1;
 }
+.timeline:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 9%;
+    width: 2px;
+    margin-left: -1.5px;
+    content: "";
+    background-color: #e9ecef;
+    z-index: -5;
+}
+.left-timeline{
+    position: relative;
+    right: 50%;
+    left: 0;
+}
+.right-timeline{
+    position: relative;
+}
+.subheading{
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: bold;
+}
+.timeline-image{
+    width: 170px;
+}
+.last h4::before{
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: 44.5%;
+    top: -29px;
+    width: 150px;
+    height: 150px;
+    margin-left: 0;
+    text-align: center;
+    color: white;
+    border: 7px solid #e9ecef;
+    border-radius: 100%;
+    background-color: #ffc800;
+}
+@media (min-width: 768px) {
+    .timeline:before {
+      left: 50%;
+    }
+}
